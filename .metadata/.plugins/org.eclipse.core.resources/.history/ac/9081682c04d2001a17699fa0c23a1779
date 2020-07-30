@@ -1,0 +1,18 @@
+package com.appsdeveloperblog.photoapp.api.users.service;
+
+import java.util.UUID;
+
+import com.appsdeveloperblog.photoapp.api.users.shared.UserDto;
+
+public class UsersServiceImpl implements UsersService {
+
+	@Override
+	public UserDto createUser(UserDto userDetails) {
+		//Generate random uniqe UUID for every new object
+		userDetails.setUserId(UUID.randomUUID().toString());
+		
+		//Protect user password and encrypt
+		
+		return null;
+	}
+}

@@ -1,0 +1,7 @@
+package com.appsdeveloperblog.photoapp.api.users.service;
+
+public interface UsersService {
+	
+	//Create User - will accept user details in the form of data transfer object. 
+	UserDto createUser(UserDto userDetails);
+}

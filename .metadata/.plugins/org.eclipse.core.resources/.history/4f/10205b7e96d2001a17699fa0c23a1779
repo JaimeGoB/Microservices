@@ -1,0 +1,9 @@
+package com.appsdeveloperblog.photoapp.api.users.ui.model;
+
+/*
+ *The purpose of this class is to send back 
+ *the information when a user is created.
+ * */
+public class CreateUserResponseModel {
+
+}
