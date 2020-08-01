@@ -37,12 +37,11 @@ public class UserController {
 	}
 	
 	//This method will get triggered because of http post request sent to /users
-	//It will accept http request to have a xml or json payload.
+	//It will except http request to have a json payload.
 	//Which will be converted to java object of CreateUserRequestModel data type.
 	//Using @Valid will make sure annotations provided by the Java object are meet.
-	//Adding consumes and produces will take a xml or json values and give back xml or json.
-	@PostMapping(consumes = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE },
-				 produces = { MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE }
+	@PostMapping(consumes = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE}
+	
 			)
 	public ResponseEntity<CreateUserResponseModel> createUser(@Valid @RequestBody CreateUserRequestModel userDetails)
 	{
